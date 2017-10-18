@@ -16,6 +16,11 @@ public class CelulaEstoque extends javax.swing.JFrame {
      */
     public CelulaEstoque() {
         initComponents();
+        
+
+        this.setSize(400,370);
+        this.setVisible(true);
+        this.setResizable(false);
     }
 
     /**
@@ -27,21 +32,106 @@ public class CelulaEstoque extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel1 = new javax.swing.JPanel();
+        BotaoExcluirCelulaEstoque = new javax.swing.JButton();
+        BotaoEditarCelulaEstoque = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
+        NomeProdutoCelulaEstoque = new javax.swing.JLabel();
+        QtdCelulaEstoque = new javax.swing.JLabel();
+        BotaoEtiquetaCelulaEstoque = new javax.swing.JToggleButton();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(651, 50));
+        setResizable(false);
+
+        jPanel1.setPreferredSize(new java.awt.Dimension(651, 50));
+
+        BotaoExcluirCelulaEstoque.setText("jButton1");
+        BotaoExcluirCelulaEstoque.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BotaoExcluirCelulaEstoqueActionPerformed(evt);
+            }
+        });
+
+        BotaoEditarCelulaEstoque.setText("jButton2");
+        BotaoEditarCelulaEstoque.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BotaoEditarCelulaEstoqueActionPerformed(evt);
+            }
+        });
+
+        jLabel2.setFont(new java.awt.Font("Noto Sans", 1, 12)); // NOI18N
+        jLabel2.setText("Quantidade:");
+
+        NomeProdutoCelulaEstoque.setFont(new java.awt.Font("Noto Sans", 1, 18)); // NOI18N
+        NomeProdutoCelulaEstoque.setText("<Nome do produto>");
+
+        QtdCelulaEstoque.setText("<qtd>");
+
+        BotaoEtiquetaCelulaEstoque.setText("jToggleButton1");
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addComponent(NomeProdutoCelulaEstoque)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 173, Short.MAX_VALUE)
+                .addComponent(jLabel2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(QtdCelulaEstoque)
+                .addGap(45, 45, 45)
+                .addComponent(BotaoEtiquetaCelulaEstoque, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(BotaoEditarCelulaEstoque, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(BotaoExcluirCelulaEstoque, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(BotaoEditarCelulaEstoque, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(BotaoExcluirCelulaEstoque, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(NomeProdutoCelulaEstoque)
+                            .addComponent(jLabel2)
+                            .addComponent(QtdCelulaEstoque)
+                            .addComponent(BotaoEtiquetaCelulaEstoque))))
+                .addContainerGap())
+        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(49, 49, 49))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void BotaoExcluirCelulaEstoqueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoExcluirCelulaEstoqueActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BotaoExcluirCelulaEstoqueActionPerformed
+
+    private void BotaoEditarCelulaEstoqueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoEditarCelulaEstoqueActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BotaoEditarCelulaEstoqueActionPerformed
 
     /**
      * @param args the command line arguments
@@ -79,5 +169,12 @@ public class CelulaEstoque extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton BotaoEditarCelulaEstoque;
+    private javax.swing.JToggleButton BotaoEtiquetaCelulaEstoque;
+    private javax.swing.JButton BotaoExcluirCelulaEstoque;
+    private javax.swing.JLabel NomeProdutoCelulaEstoque;
+    private javax.swing.JLabel QtdCelulaEstoque;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }
